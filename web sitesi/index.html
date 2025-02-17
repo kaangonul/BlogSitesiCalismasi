@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaan Gönül Blog</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    />
+    <style>
+      /* Pop-up z-index düzenlemesi */
+      #popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000; /* Diğer içeriklerin önünde olacak şekilde yüksek bir değer ayarlandı */
+      }
+    </style>
+  </head>
+  <body background="pexels-trang-pham-294089-954710.jpg">
+    <div class="container">
+      <header>
+        <h1>Kaan Gönül Blog</h1>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Anasayfa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blogHakkımda.html">Hakkımda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">İletişim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="form.html">Kayıt Formu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="satınAl.html">Kaan Blog Market</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <h2>Özel Kampanya: %20 İndirim!</h2>
+          <p>
+            Sadece bu hafta! Blog takipçilerimize özel indirim fırsatı. Fırsatı
+            kaçırmayın!
+          </p>
+          <p>Çıkmak için herhangi bir yere tıklayın veya</p>
+          <a href="satınAl.html" class="cta-btn">Şimdi Alışveriş Yapın</a>
+        </div>
+      </div>
+
+      <div class="content row">
+        <div class="col-lg-8">
+          <h2>Son Yazılar</h2>
+
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">İlk Blog Yazım</h3>
+              <p class="card-text">
+                Bu benim ilk blog yazım. Burada blog yazmanın temellerinden
+                bahsedeceğim...
+              </p>
+              <a href="blogYazmaTemelleri.html" class="btn btn-primary"
+                >Devamını Oku</a
+              >
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Web Geliştirme İpuçları</h3>
+              <p class="card-text">
+                Web geliştiricisi olarak kullanabileceğiniz bazı temel ipuçları
+                ve püf noktalar...
+              </p>
+              <a href="webGeliştirmeÖneri.html" class="btn btn-primary"
+                >Devamını Oku</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <aside class="col-lg-4 comments-section">
+          <h3>Yorumlar</h3>
+          <div class="comment">
+            <p>
+              <strong>Ahmet:</strong> Blog yazılarınız gerçekten çok
+              bilgilendirici. Teşekkürler!
+            </p>
+          </div>
+          <div class="comment">
+            <p>
+              <strong>Mehmet:</strong> Yeni yazılarınızı sabırsızlıkla
+              bekliyorum. Harika bir iş çıkartıyorsunuz!
+            </p>
+          </div>
+          <div class="comment">
+            <p>
+              <strong>Ayşe:</strong> Web geliştirme ipuçları yazınızı çok
+              beğendim, çok faydalı oldu.
+            </p>
+          </div>
+          <div class="comment">
+            <p>
+              <strong>Fatma:</strong> İletişim formunu güncelledikten sonra çok
+              daha kullanışlı oldu, teşekkürler.
+            </p>
+          </div>
+          <div class="comment">
+            <p>
+              <strong>Ali:</strong> İndirim kampanyası müthişti, hemen alışveriş
+              yaptım.
+            </p>
+          </div>
+          <div class="commentEkle"></div>
+        </aside>
+      </div>
+
+      <footer>
+        <p>&copy; 2024 Kaan Gönül Blog - Tüm Hakları Saklıdır.</p>
+        <p>
+          <a href="#">Gizlilik Politikası</a> |
+          <a href="#">Kullanım Koşulları</a>
+        </p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/kaan.gonul26/"
+            ><img src="" class="bi bi-facebook"
+          /></a>
+          <a href="https://github.com/kaangonul"
+            ><img src="github-icon.png" class="bi bi-github"
+          /></a>
+          <a href="https://x.com/Kaangonl"
+            ><img src="twitter-icon.png" class="bi bi-linkedin"
+          /></a>
+          <ul style="text-align: end">
+            Mail Adresim:
+            <a href=""><img src="" class="bi bi-chat-left-dots" /></a>
+            <li>gonulyasar92@gmail.com</li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pjaaA8dDz/13AO5g7VbD1VXhOzC+Jm6aIhb4elgPEELxh8I4ImCVpGfDkW0tXEG2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app0.js"></script>
+  </body>
+</html>

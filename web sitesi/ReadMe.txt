@@ -1,0 +1,1 @@
+Blog sitem için index dosyasına tıklayınız.

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body background="pexels-trang-pham-294089-954710.jpg">
+    <script>
+      for (let i = 0; i < 20; i++) {
+        document.write(
+          `
+            <div>
+                <span>${i}</span>
+                <img src ="//picsum.photos/id/${i}/100"
+                </div>
+            
+            `
+        );
+      }
+    </script>
+    <style>
+      div {
+        float: left;
+        position: relative;
+        width: 100px;
+        height: 100px;
+      }
+      span {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-color: #000;
+        color: white;
+        padding: 10px;
+      }
+    </style>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kayıt Formu</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body background="pexels-trang-pham-294089-954710.jpg">
+    <div class="container">
+      <h3>Paylaşım için lütfen bilgilerinizi giriniz</h3>
+      <section>
+        <form id="temas" action="">
+          <div class="form">
+            <label for="ad">Ad Soyad:</label>
+            <input type="text" id="ad" name="ad" />
+            <br />
+            <label for="email">Email Adresiniz:</label>
+            <input type="email" id="email" name="email" />
+            <br />
+            <label for="telefon">Telefon Numaranız:</label>
+            <input
+              type="text"
+              id="telefon"
+              name="telefon"
+              placeholder="Başında sıfır olmadan giriniz"
+            />
+            <br />
+            <label for="mesaj">Soru/Yorum</label>
+            <textarea
+              id="mesaj"
+              name="mesaj"
+              placeholder="Görüş ve önerileriniz için teşekkürler"
+            ></textarea>
+            <br />
+            <button type="submit">Gönder</button>
+          </div>
+          <div id="error-message" style="color: red"></div>
+          <div
+            class="alert alert-primary"
+            id="alertUyar"
+            role="alert"
+            style="display: none"
+          >
+            Form başarıyla gönderildi!
+          </div>
+        </form>
+      </section>
+    </div>
+    <script src="form.js"></script>
+  </body>
+</html>
